@@ -31,7 +31,7 @@ module "slave" {
   backup_retention_period = var.rds_backup_retention_period
 
   # DB subnet group
-  subnet_ids = module.vpc.database_subnets
+  #subnet_ids = module.vpc.database_subnets
 
   create_db_option_group    = false
   create_db_parameter_group = false
