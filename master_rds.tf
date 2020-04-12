@@ -13,7 +13,7 @@ module "master" {
   identifier = "${var.application}-master-mysql"
 
   engine            = var.rds_engine
-  engine_version    = var.rds_engine_version
+  engine_version    = var.major_engine_version
   instance_class    = var.rds_instance_class
   allocated_storage = var.rds_allocated_storage
 

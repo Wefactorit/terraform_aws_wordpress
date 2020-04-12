@@ -239,7 +239,7 @@ variable "rds_engine" {
   default     = ""
 }
 
-variable "rds_engine_version" {
+variable "major_engine_version" {
   description = "The rds engine version"
   type        = string
 }

@@ -21,7 +21,7 @@ database_subnets = ["10.9.19.0/24", "10.9.23.0/24"]
 
 ###RDS ###
 rds_engine                  = "mysql"
-rds_engine_version          = "5.7"
+major_engine_version        = "5.7"
 rds_port                    = 3306
 rds_instance_class          = "db.t2.micro"
 rds_allocated_storage       = 20
