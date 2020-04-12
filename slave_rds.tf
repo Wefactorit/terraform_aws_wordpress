@@ -14,7 +14,6 @@ module "slave" {
   major_engine_version = var.major_engine_version
   instance_class       = var.rds_instance_class
   allocated_storage    = var.rds_allocated_storage
-  create               = true
 
   name     = var.rds_master_name
   username = ""
