@@ -4,11 +4,11 @@ provider "aws" {
 }
 
 
-### uncomment if you want to use a s3 as backend #####
-/*terraform {
+terraform {
   backend "s3" {
     encrypt = false
-    region = "eu-west-3"
-    key = "terraform/terraform.tfstate"
+    bucket  = "test-gba-gen-sdx-inf-s3"
+    region  = "eu-west-3"
+    key     = "terraform/ci.tfstate"
   }
-}*/
+}

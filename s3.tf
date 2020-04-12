@@ -1,6 +1,6 @@
 
 
-module "s3_inf" {
+/*module "s3_inf" {
   source = "git::https://github.com/terraform-aws-modules/terraform-aws-s3-bucket.git?ref=v1.5.0"
 
   bucket = "${var.prefix}-gba-${var.application}-${var.env}-inf-s3"
@@ -9,7 +9,7 @@ module "s3_inf" {
   versioning = {
     enabled = true
   }
-}
+}*/
 
 
 
