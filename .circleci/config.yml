@@ -12,3 +12,5 @@ jobs:
         - run: terraform init
         - run: terraform validate
         - run: terraform plan  -var-file="sdx.tfvars"
+        - run: terraform apply  -var-file="sdx.tfvars"
+        - run: terraform destroy  -var-file="sdx.tfvars"  
