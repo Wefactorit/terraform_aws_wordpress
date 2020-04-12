@@ -6,7 +6,7 @@ module "slave" {
   source  = "terraform-aws-modules/rds/aws"
   version = "~> 2.0"
 
-  identifier          = "${var.application}-master-mysql"
+  identifier          = "${var.application}-slave-mysql"
   replicate_source_db = module.master.this_db_instance_arn
 
 
