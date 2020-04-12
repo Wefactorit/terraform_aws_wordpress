@@ -16,6 +16,7 @@ module "master" {
   engine_version    = var.rds_engine_version
   instance_class    = var.rds_instance_class
   allocated_storage = var.rds_allocated_storage
+  option_group_name = "default_db"
 
   name     = var.rds_master_name
   username = var.rds_db_user
