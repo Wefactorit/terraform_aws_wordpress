@@ -7,7 +7,8 @@ module "slave" {
   version = "~> 2.0"
 
   identifier          = "${var.application}-master-mysql"
-  replicate_source_db = module.master.this_db_instance_id
+  replicate_source_db = module.master.this_db_instance_arn
+
 
   engine               = var.rds_engine
   engine_version       = var.major_engine_version
@@ -31,7 +32,7 @@ module "slave" {
   backup_retention_period = var.rds_backup_retention_period
 
   # DB subnet group
-  #subnet_ids = module.vpc.database_subnets
+  subnet_ids = module.vpc.database_subnets
 
   create_db_option_group    = false
   create_db_parameter_group = false
