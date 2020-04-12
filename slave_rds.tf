@@ -10,7 +10,7 @@ module "slave" {
   replicate_source_db = module.master.this_db_instance_id
 
   engine            = var.rds_engine
-  engine_version    = var.rds_engine_version
+  engine_version    = var.major_engine_version
   instance_class    = var.rds_instance_class
   allocated_storage = var.rds_allocated_storage
 
