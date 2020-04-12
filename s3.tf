@@ -15,7 +15,7 @@ module "s3_inf" {
 
 
 
-module "aws-s3-app" {
+/*module "aws-s3-app" {
   source         = "trussworks/s3-private-bucket/aws"
   bucket         = "${var.name_preffix}-gba-${var.application}-${var.env}-app-s3"
   logging_bucket = module.s3_inf.this_s3_bucket_id
@@ -24,4 +24,4 @@ module "aws-s3-app" {
     Name        = "My bucket"
     Environment = "Dev"
   }
-}
+}*/
