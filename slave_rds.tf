@@ -8,7 +8,6 @@ module "slave" {
 
   identifier          = "${var.application}-master-mysql"
   replicate_source_db = module.master.this_db_instance_id
-  option_group_name   = "defaultdb"
 
   engine            = var.rds_engine
   engine_version    = var.rds_engine_version
