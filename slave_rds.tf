@@ -9,10 +9,12 @@ module "slave" {
   identifier          = "${var.application}-master-mysql"
   replicate_source_db = module.master.this_db_instance_id
 
-  engine            = var.rds_engine
-  engine_version    = var.major_engine_version
-  instance_class    = var.rds_instance_class
-  allocated_storage = var.rds_allocated_storage
+  engine               = var.rds_engine
+  engine_version       = var.major_engine_version
+  major_engine_version = var.major_engine_version
+  instance_class       = var.rds_instance_class
+  allocated_storage    = var.rds_allocated_storage
+  create               = true
 
   name     = var.rds_master_name
   username = ""
