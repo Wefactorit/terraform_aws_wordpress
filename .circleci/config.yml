@@ -12,5 +12,5 @@ jobs:
         - run: terraform init
         - run: terraform validate
         - run: terraform plan  -var-file="sdx.tfvars"
-        - run: terraform apply -auto-approve  -var-file="sdx.tfvars"
-        - run: terraform destroy -auto-approve  -var-file="sdx.tfvars"  
+        #- run: terraform apply -auto-approve  -var-file="sdx.tfvars"
+        #- run: terraform destroy -auto-approve  -var-file="sdx.tfvars"
